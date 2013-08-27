@@ -1,0 +1,113 @@
+object Form1: TForm1
+  Left = 1000
+  Height = 240
+  Top = 243
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 211
+  ClientWidth = 320
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.0.10.0'
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 192
+    Top = 8
+    Width = 304
+    Caption = 'Registrar Datos'
+    ClientHeight = 170
+    ClientWidth = 300
+    TabOrder = 0
+    Visible = False
+    object Label1: TLabel
+      Left = 14
+      Height = 21
+      Top = 20
+      Width = 37
+      Caption = 'Clave'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 14
+      Height = 21
+      Top = 60
+      Width = 56
+      Caption = 'Nombre'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 14
+      Height = 21
+      Top = 100
+      Width = 42
+      Caption = 'Precio'
+      ParentColor = False
+    end
+    object Edit1: TEdit
+      Left = 94
+      Height = 28
+      Top = 13
+      Width = 192
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 94
+      Height = 28
+      Top = 53
+      Width = 192
+      TabOrder = 1
+    end
+    object Edit3: TEdit
+      Left = 94
+      Height = 28
+      Top = 93
+      Width = 192
+      TabOrder = 2
+    end
+    object Button1: TButton
+      Left = 214
+      Height = 32
+      Top = 132
+      Width = 72
+      Caption = 'Guardar'
+      OnClick = Button1Click
+      TabOrder = 3
+    end
+    object Button2: TButton
+      Left = 118
+      Height = 32
+      Top = 132
+      Width = 71
+      Caption = 'Cerrar'
+      OnClick = Button2Click
+      TabOrder = 4
+    end
+    object Button3: TButton
+      Left = 14
+      Height = 33
+      Top = 132
+      Width = 75
+      Caption = 'Limpiar'
+      OnClick = Button3Click
+      TabOrder = 5
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 8
+    top = 176
+    object MenuItem1: TMenuItem
+      Caption = 'Sistema'
+      object MenuItem2: TMenuItem
+        Caption = 'Salir'
+        OnClick = MenuItem2Click
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Archivo'
+      object MenuItem4: TMenuItem
+        Caption = 'Registrar'
+        OnClick = MenuItem4Click
+      end
+    end
+  end
+end
